@@ -73,29 +73,35 @@ body{
     border:1px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: 10;
 }
-.wrapper .dot{
+.wrapper::after{
+    content:'';
     position: absolute;
+    z-index: 11;
     width: 15px;
     height: 15px;
     background-color: black;
     border-radius: 50%;
-    bottom: 50%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 .wrapper .sec{
     width: 3px;
     height: 45%;
     background-color: red;
+    /* --rotation:30; */
 }
 .wrapper .min{
     width: 7px;
     height: 40%;
     background-color: black;
+    /* --rotation:60; */
 }
 .wrapper .hour{
     width: 10px;
     height: 35%;
     background-color: black;
+    /* --rotation:661; */
 }
